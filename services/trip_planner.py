@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 from .google_client import call_routes_api, reverse_geocode
 from utils.trip_utils import parse_duration, miles_from_meters, format_time, decode_poly
-from .hos_rules import *
+from rules.hos_rules import *
 
 def generate_trip(origin, pickup, destination, time, current_cycle_used_hours=0):
     """Plan trip timeline based on Google Routes and HOS rules."""
